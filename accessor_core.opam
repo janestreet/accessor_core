@@ -11,7 +11,11 @@ build: [
 ]
 depends: [
   "ocaml" {>= "4.09.0"}
-  "dune" {>= "2.0.0"}
+  "accessor_base"
+  "core_kernel"
+  "ppx_accessor"
+  "ppx_jane"
+  "dune"          {>= "2.0.0"}
 ]
 synopsis: "Accessors for Core types, for use with the Accessor library"
 description: "
