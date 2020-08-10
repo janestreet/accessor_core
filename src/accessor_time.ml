@@ -3,9 +3,7 @@ open! Import
 
 let span_since_epoch =
   [%accessor
-    Accessor.isomorphism
-      ~get:Time.to_span_since_epoch
-      ~construct:Time.of_span_since_epoch]
+    Accessor.isomorphism ~get:Time.to_span_since_epoch ~construct:Time.of_span_since_epoch]
 ;;
 
 let date_ofday zone =

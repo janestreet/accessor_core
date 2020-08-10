@@ -27,7 +27,6 @@ val reversed
 val each : ('i -> 'a -> 'b, 'i -> 'a Fdeque.t -> 'b Fdeque.t, [< many ]) Accessor.t
 
 (** The indexed version of [each] provides a numeric index for each element. *)
-val eachi
-  : (int * 'i -> 'a -> 'b, 'i -> 'a Fdeque.t -> 'b Fdeque.t, [< many ]) Accessor.t
+val eachi : (int * 'i -> 'a -> 'b, 'i -> 'a Fdeque.t -> 'b Fdeque.t, [< many ]) Accessor.t
 
 include Accessor.Monad.S with type 'a t := 'a Fdeque.t
