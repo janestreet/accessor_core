@@ -20,4 +20,4 @@ end
 with type t := Month.t
 
 (** Access a month shifted by the given number of months. *)
-val shifted : int -> (_, Month.t, Month.t, [< isomorphism ]) Accessor.Simple.t
+val shifted : int -> (_, Month.t, Month.t, [< isomorphism ]) Accessor.t
