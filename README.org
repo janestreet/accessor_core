@@ -1,3 +1,5 @@
+#+title: Accessor_core
+#+UUID: a69875f9-2e47-3bbb-29e7-1af1a55a16fc
 
 The ~Accessor_core~ library extends ~Accessor_base~ with convenience functions
 for working with various types in ~Core~.
