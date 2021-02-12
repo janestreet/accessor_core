@@ -10,7 +10,8 @@ end
 module Pid = struct
   include Pid
 
-  include Quickcheckable.Of_quickcheckable
+  include
+    Quickcheckable.Of_quickcheckable
       (Positive_int)
       (struct
         include Pid
