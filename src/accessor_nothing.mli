@@ -1,4 +1,4 @@
-open! Core_kernel
+open! Core
 open! Import
 
 (** You can access anything if you put your mind to it. Nothing is impossible! *)

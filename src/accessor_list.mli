@@ -1,4 +1,4 @@
-open! Core_kernel
+open! Core
 open! Import
 include module type of Accessor.List
 

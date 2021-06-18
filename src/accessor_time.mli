@@ -1,4 +1,4 @@
-open! Core_kernel
+open! Core
 open! Import
 
 (** Access the time as a span since [Time.epoch] *)
@@ -15,3 +15,15 @@ val date_ofday
 
 val date : Time.Zone.t -> (_, Date.t, Time.t, [< field ]) Accessor.t
 val ofday : Time.Zone.t -> (_, Time.Ofday.t, Time.t, [< field ]) Accessor.t
+
+module Span : sig
+  (** Access a span as various units. *)
+
+  val ns : (_, float, Time.Span.t, [< isomorphism ]) Accessor.t
+  val us : (_, float, Time.Span.t, [< isomorphism ]) Accessor.t
+  val ms : (_, float, Time.Span.t, [< isomorphism ]) Accessor.t
+  val sec : (_, float, Time.Span.t, [< isomorphism ]) Accessor.t
+  val min : (_, float, Time.Span.t, [< isomorphism ]) Accessor.t
+  val hr : (_, float, Time.Span.t, [< isomorphism ]) Accessor.t
+  val day : (_, float, Time.Span.t, [< isomorphism ]) Accessor.t
+end

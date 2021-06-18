@@ -1,3 +1,4 @@
 (library (name accessor_core_tests)
- (libraries accessor_core accessor_test_helpers core core.time_ns_unix)
+ (libraries accessor_core accessor_test_helpers core_kernel.core
+  core.time_ns_unix)
  (preprocess (pps ppx_jane ppx_accessor)))

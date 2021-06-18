@@ -1,4 +1,4 @@
-open! Core_kernel
+open! Core
 open! Import
 
 type t = Unit_of_time.t =

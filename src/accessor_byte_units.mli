@@ -1,8 +1,8 @@
-open! Core_kernel
+open! Core
 open! Import
 
 (** All of these accessors will raise if a bounds check fails. The expected bounds are
-    documented next to the corresponding conversion functions in [Core_kernel.Byte_units].
+    documented next to the corresponding conversion functions in [Core.Byte_units].
 *)
 
 val bytes : (_, int, Byte_units.t, [< isomorphism ]) Accessor.t

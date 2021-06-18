@@ -1,4 +1,4 @@
-open! Core_kernel
+open! Core
 open! Import
 
 (** Access [()] iff the queue is empty. *)

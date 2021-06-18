@@ -1,4 +1,4 @@
-open! Core_kernel
+open! Core
 open! Import
 
 module Generator = Accessor.Of_monad (struct

@@ -1,4 +1,4 @@
-open! Core_kernel
+open! Core
 open! Import
 
 (** These accessors all use [Date.create_exn] when creating new dates, and therefore can
