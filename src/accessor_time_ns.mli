@@ -10,11 +10,11 @@ val span_since_epoch : (_, Time_ns.Span.t, Time_ns.t, [< isomorphism ]) Accessor
     documentation. *)
 
 val date_ofday
-  :  Time.Zone.t
+  :  Time_float.Zone.t
   -> (_, Date.t * Time_ns.Ofday.t, Time_ns.t, [< isomorphism ]) Accessor.t
 
-val date : Time.Zone.t -> (_, Date.t, Time_ns.t, [< field ]) Accessor.t
-val ofday : Time.Zone.t -> (_, Time_ns.Ofday.t, Time_ns.t, [< field ]) Accessor.t
+val date : Time_float.Zone.t -> (_, Date.t, Time_ns.t, [< field ]) Accessor.t
+val ofday : Time_float.Zone.t -> (_, Time_ns.Ofday.t, Time_ns.t, [< field ]) Accessor.t
 
 module Span : sig
   (** Access a span as various units. *)
