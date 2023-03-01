@@ -15,8 +15,10 @@ depends: [
   "core"
   "ppx_accessor"
   "ppx_jane"
+  "ppx_optcomp"
   "dune"          {>= "2.0.0"}
 ]
+available: arch != "arm32" & arch != "x86_32"
 synopsis: "Accessors for Core types, for use with the Accessor library"
 description: "
 This library provides accessors for numerous types in Core.
