@@ -21,7 +21,7 @@ val reversed
   : ( 'i -> 'a Fdeque.t -> 'b Fdeque.t
     , 'i -> 'a Fdeque.t -> 'b Fdeque.t
     , [< isomorphism ] )
-      Accessor.General.t
+    Accessor.General.t
 
 (** Access each element of the queue. *)
 val each

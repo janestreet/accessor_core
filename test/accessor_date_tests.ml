@@ -45,9 +45,9 @@ module Month = struct
   include (
     Month :
       module type of struct
-      include Month
-    end
-    with type t := Month.t)
+        include Month
+      end
+      with type t := Month.t)
 end
 
 let%test_unit "year_exn" =

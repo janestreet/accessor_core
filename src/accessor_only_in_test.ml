@@ -2,7 +2,7 @@ open! Core
 open! Import
 
 include Accessor.Of_monad (struct
-    include Only_in_test
+  include Only_in_test
 
-    let apply = `Define_using_bind
-  end)
+  let apply = `Define_using_bind
+end)

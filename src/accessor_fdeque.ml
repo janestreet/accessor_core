@@ -36,7 +36,7 @@ let each = [%accessor list @> Accessor.List.each]
 let eachi = [%accessor list @> Accessor.List.eachi]
 
 include Accessor.Of_monad (struct
-    include Fdeque
+  include Fdeque
 
-    let apply = `Define_using_bind
-  end)
+  let apply = `Define_using_bind
+end)

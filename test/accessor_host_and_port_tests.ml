@@ -11,9 +11,9 @@ module Host_and_port = struct
   include (
     Host_and_port :
       module type of struct
-      include Host_and_port
-    end
-    with type t := Host_and_port.t)
+        include Host_and_port
+      end
+      with type t := Host_and_port.t)
 end
 
 let%test_unit "tuple" =
