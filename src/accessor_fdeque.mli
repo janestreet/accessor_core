@@ -19,9 +19,9 @@ val last : (_, 'a, 'a Fdeque.t, [< optional ]) Accessor.t
 (** Access a reversed version of the queue. *)
 val reversed
   : ( 'i -> 'a Fdeque.t -> 'b Fdeque.t
-    , 'i -> 'a Fdeque.t -> 'b Fdeque.t
-    , [< isomorphism ] )
-    Accessor.General.t
+      , 'i -> 'a Fdeque.t -> 'b Fdeque.t
+      , [< isomorphism ] )
+      Accessor.General.t
 
 (** Access each element of the queue. *)
 val each

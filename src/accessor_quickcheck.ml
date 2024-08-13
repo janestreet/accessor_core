@@ -2,7 +2,7 @@ open! Core
 open! Import
 
 module Generator = Accessor.Of_monad (struct
-  include Quickcheck.Generator
+    include Quickcheck.Generator
 
-  let apply = `Custom apply
-end)
+    let apply = `Custom apply
+  end)
