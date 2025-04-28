@@ -15,13 +15,13 @@ module Date = struct
 end
 
 module Year = struct
-  type t = int [@@deriving compare, sexp_of, quickcheck]
+  type t = int [@@deriving equal, sexp_of, quickcheck]
 
   let quickcheck_generator = Int.gen_incl 1900 2100
 end
 
 module Day = struct
-  type t = int [@@deriving compare, sexp_of, quickcheck]
+  type t = int [@@deriving equal, sexp_of, quickcheck]
 
   let quickcheck_generator = Int.gen_incl 1 28
 end

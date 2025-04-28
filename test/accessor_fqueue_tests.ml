@@ -2,7 +2,7 @@ open! Core
 open! Import
 
 module Bool_fqueue = struct
-  type t = bool Fqueue.t [@@deriving compare, sexp_of]
+  type t = bool Fqueue.t [@@deriving equal, sexp_of]
 
   let quickcheck_generator =
     Quickcheck.Generator.map [%quickcheck.generator: bool list] ~f:Fqueue.of_list
