@@ -51,25 +51,16 @@ module Month = struct
 end
 
 let%test_unit "year_exn" =
-  Accessor_test_helpers.field
-    (module Year)
-    (module Date)
-    (module Unit)
-    (fun () -> Accessor.Date.year_exn)
+  Accessor_test_helpers.field (module Year) (module Date) (module Unit) (fun () ->
+    Accessor.Date.year_exn)
 ;;
 
 let%test_unit "month_exn" =
-  Accessor_test_helpers.field
-    (module Month)
-    (module Date)
-    (module Unit)
-    (fun () -> Accessor.Date.month_exn)
+  Accessor_test_helpers.field (module Month) (module Date) (module Unit) (fun () ->
+    Accessor.Date.month_exn)
 ;;
 
 let%test_unit "day_exn" =
-  Accessor_test_helpers.field
-    (module Day)
-    (module Date)
-    (module Unit)
-    (fun () -> Accessor.Date.day_exn)
+  Accessor_test_helpers.field (module Day) (module Date) (module Unit) (fun () ->
+    Accessor.Date.day_exn)
 ;;

@@ -30,9 +30,6 @@ let%test_unit "date_ofday" =
 ;;
 
 let%test_unit "date" =
-  Accessor_test_helpers.field
-    (module Date)
-    (module Time_ns)
-    (module Unit)
-    (fun () -> Accessor.Time_ns.date Time.Zone.utc)
+  Accessor_test_helpers.field (module Date) (module Time_ns) (module Unit) (fun () ->
+    Accessor.Time_ns.date Time.Zone.utc)
 ;;

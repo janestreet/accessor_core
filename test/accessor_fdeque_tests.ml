@@ -69,9 +69,6 @@ let%test_unit "reversed" =
 ;;
 
 let%test_unit "each" =
-  Accessor_test_helpers.many
-    (module Bool)
-    (module Bool_fdeque)
-    (module Unit)
-    (fun () -> Accessor.Fdeque.each)
+  Accessor_test_helpers.many (module Bool) (module Bool_fdeque) (module Unit) (fun () ->
+    Accessor.Fdeque.each)
 ;;

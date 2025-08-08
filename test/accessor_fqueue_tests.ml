@@ -29,9 +29,6 @@ let%test_unit "empty" =
 ;;
 
 let%test_unit "each" =
-  Accessor_test_helpers.many
-    (module Bool)
-    (module Bool_fqueue)
-    (module Unit)
-    (fun () -> Accessor.Fqueue.each)
+  Accessor_test_helpers.many (module Bool) (module Bool_fqueue) (module Unit) (fun () ->
+    Accessor.Fqueue.each)
 ;;
