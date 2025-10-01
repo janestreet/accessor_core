@@ -10,7 +10,7 @@ val at_key_set
 (** [at_key_seti keys] is like [ati key], but it accesses multiple keys. *)
 val at_key_seti
   :  ('key, _) Set.t
-  -> ('key * _, 'data option, ('key, 'data, _) Map.t, [< many ]) Accessor.Indexed.t
+  -> ('key * 'i, 'i, 'data option, ('key, 'data, _) Map.t, [< many ]) Accessor.Indexed.t
 
 (** [found_key_set keys] is like [found key], but it accesses multiple keys. *)
 val found_key_set
@@ -20,4 +20,4 @@ val found_key_set
 (** [found_key_seti keys] is like [foundi key], but it accesses multiple keys. *)
 val found_key_seti
   :  ('key, _) Set.t
-  -> ('key * _, 'data, ('key, 'data, _) Map.t, [< many ]) Accessor.Indexed.t
+  -> ('key * 'i, 'i, 'data, ('key, 'data, _) Map.t, [< many ]) Accessor.Indexed.t
