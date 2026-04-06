@@ -3,4 +3,4 @@
  (public_name accessor_core)
  (libraries accessor_base core)
  (preprocess
-  (pps ppx_jane ppx_accessor ppx_optcomp)))
+  (pps ppx_jane -compare-require-explicit-locality ppx_accessor ppx_optcomp)))
